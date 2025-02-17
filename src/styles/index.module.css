@@ -304,6 +304,10 @@
   background-color: #f9f9f9;
 }
 
+.dateInput::-webkit-calendar-picker-indicator {
+  filter: brightness(0) contrast(1);
+}
+
 .saveDateBtn {
   padding: 8px 12px;
   background-color: #007bff;
