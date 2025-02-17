@@ -1,7 +1,7 @@
 import { useState } from "react";
 import db from "@/config/firebase";
 import { doc, getDoc, updateDoc } from "@firebase/firestore";
-import styles from "@/styles/index.module.css";
+import styles from "@/styles/index.module.css"
 import DeleteTask from "./deleteTask";
 import { FiEdit } from "react-icons/fi";
 

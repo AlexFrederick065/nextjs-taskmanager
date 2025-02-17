@@ -3,6 +3,7 @@ import { userState } from "react";
 import db from "@/config/firebase";
 import { doc, deleteDoc } from "@firebase/firestore";
 import { MdDelete } from "react-icons/md";
+import styles from "@/styles/index.module.css"
 
 const DeleteTask = ({id, onClose}) => {
     const handleDelete = async () => {
@@ -16,7 +17,7 @@ const DeleteTask = ({id, onClose}) => {
         }
     }
     return (
-        <button onClick = {handleDelete} aria-label="Delete Task"><MdDelete size={18} color="red"/></button>
+        <button className={styles.delBtn}onClick = {handleDelete} aria-label="Delete Task"><MdDelete size={18} color="red"/></button>
     )
 }
 
